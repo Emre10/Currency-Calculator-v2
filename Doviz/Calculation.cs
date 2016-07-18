@@ -2,27 +2,27 @@
 {
     public class Calculation
     {
-        decimal moneyvalue;
-        GetExchangeRatesResponse moneylist;
+        decimal moneyamount;
+        GetExchangeRatesResponse currencylist;
 
-        public Calculation(decimal moneyvalue, GetExchangeRatesResponse moneylist)
+        public Calculation(decimal moneyamount, GetExchangeRatesResponse moneylist)
         {
-            this.moneyvalue = moneyvalue;
-            this.moneylist = moneylist;
+            this.moneyamount = moneyamount;
+            this.currencylist = moneylist;
         }
 
         public string [] Calculator()
         {
-            string[] calcresult = new string[moneylist.CurrencyPairs.Length];
-            for (int i = 0; i < moneylist.CurrencyPairs.Length; i++)
+            string[] calculatedresult = new string[currencylist.CurrencyPairs.Length];
+            for (int i = 0; i < currencylist.CurrencyPairs.Length; i++)
             {
-                string money = moneylist.CurrencyPairs[i].CounterCurrency;
-                double rate = double.Parse(moneylist.CurrencyPairs[i].Rate.ToString());
+                string money = currencylist.CurrencyPairs[i].CounterCurrency;
+                double rate = double.Parse(currencylist.CurrencyPairs[i].Rate.ToString());
 
-                double calculate = (double)moneyvalue * rate;
-                calcresult[i] = money+" "+calculate.ToString();
+                double calculate = (double)moneyamount * rate;
+                calculatedresult[i] = money+" "+calculate.ToString();
             }
-            return calcresult;
+            return calculatedresult;
         }
     }
 }

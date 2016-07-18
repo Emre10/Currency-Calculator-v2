@@ -2,7 +2,10 @@
 {
     public interface IParse
     {
-        string Data { get; set; }
+        string Currencylistdata { get; set; }
         GetExchangeRatesResponse Parser();
     }
 }
+
+
+

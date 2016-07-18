@@ -5,19 +5,19 @@ namespace Exchange
 {
     public class Xml: IParse
     {
-        string data;
+        string currencylistdata;
 
-        public string Data { get; set; }
+        public string Currencylistdata { get; set; }
 
         public Xml(string data)
         {
-            this.data = data;
+            this.currencylistdata = data;
         }
 
         public GetExchangeRatesResponse Parser()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(GetExchangeRatesResponse));
-            return (GetExchangeRatesResponse)serializer.Deserialize(new StringReader(data));
+            return (GetExchangeRatesResponse)serializer.Deserialize(new StringReader(currencylistdata));
         }
     }
 }

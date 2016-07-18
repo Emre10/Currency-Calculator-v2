@@ -4,17 +4,17 @@ namespace Exchange
 {
     public class Json: IParse
     {
-        string data;
-        public string Data { get; set; }
+        string currencylistdata;
+        public string Currencylistdata { get; set; }
 
         public Json(string data)
         {
-            this.data = data;
+            this.currencylistdata = data;
         }
 
         public GetExchangeRatesResponse Parser()
         {
-            return (GetExchangeRatesResponse)JsonConvert.DeserializeObject(data, typeof(GetExchangeRatesResponse));
+            return (GetExchangeRatesResponse)JsonConvert.DeserializeObject(currencylistdata, typeof(GetExchangeRatesResponse));
         }
     }
 }
