@@ -1,0 +1,8 @@
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\bin\Debug\Doviz.exe.config
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\bin\Debug\Doviz.exe
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\bin\Debug\Doviz.pdb
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\bin\Debug\Newtonsoft.Json.dll
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\bin\Debug\Newtonsoft.Json.xml
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\obj\Debug\Exchange.csprojResolveAssemblyReference.cache
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\obj\Debug\Doviz.exe
+C:\Users\KGN\documents\visual studio 2015\Projects\Doviz\Doviz\obj\Debug\Doviz.pdb
