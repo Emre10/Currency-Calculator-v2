@@ -15,7 +15,7 @@ namespace ExchangeTest
             data.CounterCurrency = "USD";
             data.Rate = 1;
             testdata[0] = data;
-
+//  :)
             GetExchangeRatesResponse testlist = new GetExchangeRatesResponse();
             testlist.CurrencyPairs = testdata;
 
